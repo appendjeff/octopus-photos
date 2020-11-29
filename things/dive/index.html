@@ -3,10 +3,16 @@
     <link rel="stylesheet" href="/octopus.css"></link>
 <style>
 body {
-margin:0;
+  margin:0;
+  background-color:black;
 }
 .dive-content {
+  background-color: darkseagreen;
+  padding-top: 1em;
+}
+.dive-content .container {
   margin: 2%;
+  margin-bottom: 0;
 }
 .diving-top {
 background-image: linear-gradient(darkseagreen, #273327);
@@ -29,20 +35,27 @@ background-color: black;
 height: 400px;
 color: aquamarine;
 padding-top: 100px;
-padding: 5em;
+padding-right: 5em;
 text-align: right;
+}
+@media (max-width: 768px) {
+  .bottom .transformation {
+    display: none;
+  }
 }
 
 </style>
   </head>
   <body>
 		<div class="dive-content">
-			<h1><a href="/">Octopus</a> in the deep</h1>
-			<p>Let's go for a dive</p>
-			<div class="img">
-				<img src="/photos/wikimedia_commons/Octopus_arm_showing_suckers.jpg">
-			</div>
-		</div>
+      <div class="container">
+        <h1><a href="/">Octopus</a> in the deep</h1>
+        <p>Let's go for a dive</p>
+        <div class="img">
+          <img src="/photos/wikimedia_commons/Octopus_arm_showing_suckers.jpg">
+        </div>
+      </div>
+    </div>
 		<div class="diving-top"></div>
 		<div class="void"></div>
 		<div class="deep-dive-bottom"></div>
@@ -57,7 +70,7 @@ text-align: right;
 		<div class="bottom"></div>
 		<div class="bottom"></div>
 		<div class="bottom">
-			<p>time to become a <a href="https://www.sprawledoctopus.com/3d/">octopus</a></p>
+			<p class="transformation">time to become a <a href="https://www.sprawledoctopus.com/3d/">octopus</a></p>
 		</div>
   </body>
 </html>
